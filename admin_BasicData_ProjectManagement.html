@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>项目管理</title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/ProjectManagement.css" />
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+	</head>
+	<body>
+
+		<div class="clf top_column">
+			<div class="fl">
+				<h6>管理系统</h6></div>
+			<div class="fr">
+				<a href="javascript:"><span>admin</span>欢迎您！</a>
+				<a href="javascript:">刷新页面</a>
+				<a href="javascript:">安全退出</a>
+			</div>
+		</div>
+		<div class="left_column clf">
+			<ul id="ul">
+				<li class='current'>
+					<div class="title">基础资料</div>
+					<div class="menu">
+						<a href="admin_BasicData_DepartmentManagement.html">部门管理</a>
+						<a href="admin_BasicData_OperationLog.html">操作日志</a>
+						<a href="admin_BasicData_DataDictionaryl.html">数据字典</a>
+						<a href="admin_BasicData_UserManagement.html">系统配置</a>
+						<a href="admin_BasicData_UserManagement.html">用户管理</a>
+						<a href="admin_BasicData_RolemManagement.html">角色管理</a>
+						<a href="admin_BasicData_ResourceManagement.html">资源管理</a>
+						<a href="admin_BasicData_ProjectManagement.html" class="active">项目管理</a>						
+					</div>
+				</li>
+				<li>
+					<div class="title">业务中心</div>
+					<div class="menu">
+						<a href="BusinessCenter_YardArea.html">车场区域</a>
+						<a href="BusinessCenter_VehicleLicense.html">车辆授权</a>
+						<a href="BusinessCenter_BuildingManagement.html">房屋管理</a>
+						<a href="BusinessCenter_EquipmentManagement.html">设备管理</a>
+						<a href="BusinessCenter_EquipmentManagement_1.html">设备管理展开</a>
+						<a href="BusinessCenter_MonthCard.html">月卡续费</a>
+					</div>
+				</li>
+					<li>
+					<div class="title">监控中心</div>
+					<div class="menu">
+						<a href="EquipmentMonitoring.html">设备监控</a>
+					</div>
+				</li>
+				<li>
+					<div class="title">报表中心</div>
+					<div class="menu">
+						<a href="Report.html">固定车辆信息统计表</a>
+						<a href="Report_1.html">固定车辆信息统计表-1</a>
+					</div>
+				</li>
+			</ul>
+			<a href="javascript:" class="toggleBtn"></a>
+		</div>
+
+		<!--内容部分-->
+		<div class="box clf">
+
+			<div class="content clf">
+				<div class="boxtop-nav">
+					<ul class="clf">
+					<li><a href="admin_home.html">首页</a></li>
+					<li><a href="admin_BasicData_DepartmentManagement.html">部门管理</a></li>
+					<li><a href="admin_BasicData_OperationLog.html">操作日志</a></li>
+					<li><a href="admin_BasicData_DataDictionaryl.html">数据字典</a></li>
+					<li><a href="admin_BasicData_SystemConfiguration.html">系统配置</a></li>
+					<li><a href="admin_BasicData_UserManagement.html">用户管理</a></li>
+					<li><a href="admin_BasicData_RolemManagement.html">角色管理</a></li>
+					<li><a href="admin_BasicData_ResourceManagement.html">资源管理</a></li>
+					<li class="nav-active"><a href="admin_BasicData_ProjectManagement.html">项目管理</a></li>
+				</ul>
+				</div>
+				<div class="search ">
+					<div class="clf top toggleDiv">
+						<div class="condition fl">
+							<span class="conditions-text">资源名称：</span>
+							<div class="custom-input">
+								<input type="text" placeholder="请输入编号或者名称">
+								<input type="submit" value="">
+							</div>
+						</div>
+						<div class="fr create">
+				          <span>创建时间：</span>
+				          <div>
+				            <div class="c-datepicker-date-editor  J-datepicker-range-day mt10" >
+				              <input placeholder="开始时间" name="" class="c-datepicker-data-input only-date" value="">
+				              <span class="c-datepicker-range-separator">至</span>
+				              <input placeholder="结束时间" name="" class="c-datepicker-data-input only-date" value="">
+				            </div>
+				            <a href="javascript:"></a>
+				          </div>
+        				</div>
+					</div>
+					<div class="clf bottom">
+						<div class="fl">
+							<button class="plechoose fl">请选择 <img src="images/icon_9.png" alt=""></button>
+							<button class="batchdel fl">批量删除</button>
+							<div>共搜索到 <span>922</span> 条数据</div>
+						</div>
+						<div class="fr">
+							<button class="search-button blu-button">搜索</button>
+							<button class="clear-button bluborder-button">清除</button>
+							<button class="ss transf-button">
+            <i><img src="images/icon_t_arrow2.png" alt=""></i>
+            <span>收起搜索</span>
+          </button>
+						</div>
+					</div>
+				</div>
+				<div class="result clf">
+					<div class="selected">已选 <span>5</span> 项数据</div>
+					<div class="tab">
+        <table class="project-table">
+          <tr>
+            <th></th>
+            <th>编号</th>
+            <th>名称</th>
+            <th>地址</th>
+            <th>联系人</th>
+            <th>电话</th>
+            <th>总车位</th>
+            <th>创建时间</th>
+            <th>更新时间</th>
+            <th>操作员</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>user</td>
+            <td>user</td>
+            <td>地址地址地址地址</td>
+            <td>用户1</td>
+            <td>13049587456</td>
+            <td>100</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td>用户1</td>
+            <td><span>正常</span></td>
+            <td>
+              <a class="bj" href="javascript:">编辑</a>
+              <a href="javascript:" class="delete">删除</a>
+              <a href="javascript:">重置密码</a>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>user</td>
+            <td>user</td>
+            <td>地址地址地址地址</td>
+            <td>用户1</td>
+            <td>13049587456</td>
+            <td>100</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td>用户1</td>
+            <td><span>正常</span></td>
+            <td>
+              <a class="bj" href="javascript:">编辑</a>
+              <a href="javascript:" class="delete">删除</a>
+              <a href="javascript:">重置密码</a>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>user</td>
+            <td>user</td>
+            <td>地址地址地址地址</td>
+            <td>用户1</td>
+            <td>13049587456</td>
+            <td>100</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td>用户1</td>
+            <td><span>正常</span></td>
+            <td>
+              <a class="bj" href="javascript:">编辑</a>
+              <a href="javascript:" class="delete">删除</a>
+              <a href="javascript:">重置密码</a>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>user</td>
+            <td>user</td>
+            <td>地址地址地址地址</td>
+            <td>用户1</td>
+            <td>13049587456</td>
+            <td>100</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td>用户1</td>
+            <td><span>正常</span></td>
+            <td>
+              <a class="bj" href="javascript:">编辑</a>
+              <a href="javascript:" class="delete">删除</a>
+              <a href="javascript:">重置密码</a>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>user</td>
+            <td>user</td>
+            <td>地址地址地址地址</td>
+            <td>用户1</td>
+            <td>13049587456</td>
+            <td>100</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td>用户1</td>
+            <td><span>正常</span></td>
+            <td>
+              <a class="bj" href="javascript:">编辑</a>
+              <a href="javascript:" class="delete">删除</a>
+              <a href="javascript:">重置密码</a>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>user</td>
+            <td>user</td>
+            <td>地址地址地址地址</td>
+            <td>用户1</td>
+            <td>13049587456</td>
+            <td>100</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td>用户1</td>
+            <td><span>正常</span></td>
+            <td>
+              <a class="bj" href="javascript:">编辑</a>
+              <a href="javascript:" class="delete">删除</a>
+              <a href="javascript:">重置密码</a>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>user</td>
+            <td>user</td>
+            <td>地址地址地址地址</td>
+            <td>用户1</td>
+            <td>13049587456</td>
+            <td>100</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td>用户1</td>
+            <td><span>正常</span></td>
+            <td>
+              <a class="bj" href="javascript:">编辑</a>
+              <a href="javascript:" class="delete">删除</a>
+              <a href="javascript:">重置密码</a>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>user</td>
+            <td>user</td>
+            <td>地址地址地址地址</td>
+            <td>用户1</td>
+            <td>13049587456</td>
+            <td>100</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td><p>2015-09-26</p>08:50:08</td>
+            <td>用户1</td>
+            <td><span>正常</span></td>
+            <td>
+              <a class="bj" href="javascript:">编辑</a>
+              <a href="javascript:" class="delete">删除</a>
+              <a href="javascript:">重置密码</a>
+            </td>
+          </tr>
+        </table>
+					</div>
+					<div class="page">
+						<a href="javascript:"><img src="images/icon_l_arrow.png" alt=""></a>
+						<a href="javascript:">1</a>
+						<a href="javascript:">2</a>
+						<a href="javascript:">3</a>
+						<a href="javascript:">4</a>
+						<a href="javascript:">5</a>
+						<a href="javascript:">6</a>
+						<a href="javascript:">7</a>
+						<a href="javascript:">8</a>
+						<a href="javascript:">9</a>
+						<a href="javascript:"><img src="images/icon_r_arrow.png" alt=""></a>
+						<span>10条/页</span>
+						<span>跳至<input type="text">页</span>
+						<button class="go">Go</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--弹窗-->
+<div class="main">
+  <div class="depwd">
+    <div class="top-nav">
+      <p class="t-text fl">项目信息</p>
+      <p class="close fr">x</p>
+    </div>
+    <div class="bot">
+      <div class="cet">
+        <div class="clf">
+          <p class="red"><i class="iconfont icon-jian-tianchong"></i>错误提示的文案</p>
+          <p class="clf"><span class="fl"><span class='red-text'>*</span>项目编号：</span><input class="fl"
+                                                                                                   type="text"
+                                                                                                   value="请输入编号，必填"></p>
+          <p class="clf"><span class="fl"><span class='red-text'>*</span>项目名称：</span><input class="fl"
+                                                                                                   type="text"
+                                                                                                   value="请输入6-8位数字密码，必填">
+          </p>
+          <p class="clf"><span class="fl">地址：</span><input class="fl" type="text" value="请输入6-8位数字密码，必填"></p>
+          <p class="clf"><span class="fl">联系人：</span><input class="fl" type="text" value="请输入6-8位数字密码，必填"></p>
+          <p class="clf"><span class="fl">联系电话：</span><input class="fl" type="text" value="请输入编号，必填"></p>
+          <p class="clf"><span class="fl">车位总数：</span><input class="fl" type="text" value="请输入编号，必填"></p>
+          <p class="bz clf"><span class="fl">备注：</span><input class="fl" type="text" value="请输入备注" id="inp"></p>
+        </div>
+        <div class="button clf">
+          <a class="qr fr">确定</a>
+          <a class="qx fr">取消</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="delete_prompt">
+	<div class="depwd">
+		<div class="text">你是否确认删除选中的记录</div>
+		<div class="button clf">
+			<a class="qr fr">确定</a>
+			<a class="qx fr">取消</a>
+		</div>
+	</div>
+</div>
+
+<!--弹窗-->
+
+
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/datepicker.all.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.add').click(function() {
+					$(".main").show();
+					$('.depwd').draggable({
+						handle: "div.top-nav"
+					}, {
+						containment: "parent"
+					});
+				});
+				$(".close").click(function() {
+					$(".main").hide();
+				});
+				$(".qx").click(function() {
+					$(".main").hide();
+				});
+			});
+		</script>
+		<script>
+    $(function(){
+        var DATAPICKERAPI = {
+            // 默认input显示当前月,自己获取后填充
+            activeMonthRange: function () {
+                return {
+                    begin: moment().set({ 'date': 1, 'hour': 0, 'minute': 0, 'second': 0 }).format('YYYY-MM-DD HH:mm:ss'),
+                    end: moment().set({ 'hour': 23, 'minute': 59, 'second': 59 }).format('YYYY-MM-DD HH:mm:ss')
+                }
+            },
+            shortcutMonth: function () {
+                // 当月
+                var nowDay = moment().get('date');
+                var prevMonthFirstDay = moment().subtract(1, 'months').set({ 'date': 1 });
+                var prevMonthDay = moment().diff(prevMonthFirstDay, 'days');
+                return {
+                    now: '-' + nowDay + ',0',
+                    prev: '-' + prevMonthDay + ',-' + nowDay
+                }
+            },
+            // 注意为函数：快捷选项option:只能同一个月份内的
+            rangeMonthShortcutOption1: function () {
+                var result = DATAPICKERAPI.shortcutMonth();
+                return [{
+                    name: '昨天',
+                    day: '-1,-1',
+                    time: '00:00:00,23:59:59'
+                }, {
+                    name: '这一月',
+                    day: result.now,
+                    time: '00:00:00,'
+                }, {
+                    name: '上一月',
+                    day: result.prev,
+                    time: '00:00:00,23:59:59'
+                }];
+            },
+            // 快捷选项option
+            rangeShortcutOption1: [{
+                name: '最近一周',
+                day: '-7,0'
+            }, {
+                name: '最近一个月',
+                day: '-30,0'
+            }, {
+                name: '最近三个月',
+                day: '-90, 0'
+            }],
+            singleShortcutOptions1: [{
+                name: '今天',
+                day: '0'
+            }, {
+                name: '昨天',
+                day: '-1',
+                time: '00:00:00'
+            }, {
+                name: '一周前',
+                day: '-7'
+            }]
+        };
+        //十分秒年月日单个
+        $('.J-datepicker').datePicker({
+            hasShortcut:true,
+            min:'2018-01-01 04:00:00',
+            max:'2019-04-29 20:59:59',
+            shortcutOptions:[{
+                name: '今天',
+                day: '0'
+            }, {
+                name: '昨天',
+                day: '-1',
+                time: '00:00:00'
+            }, {
+                name: '一周前',
+                day: '-7'
+            }],
+            hide:function(){
+                console.info(this)
+            }
+        });
+
+        //年月日单个
+        $('.J-datepicker-day').datePicker({
+            hasShortcut: true,
+            format:'YYYY-MM-DD',
+            shortcutOptions: [{
+                name: '今天',
+                day: '0'
+            }, {
+                name: '昨天',
+                day: '-1'
+            }, {
+                name: '一周前',
+                day: '-7'
+            }]
+        });
+
+        //年月日范围
+        $('.J-datepicker-range-day').datePicker({
+            hasShortcut: true,
+            format: 'YYYY-MM-DD',
+            isRange: true,
+            shortcutOptions: DATAPICKERAPI.rangeShortcutOption1
+        });
+
+        //十分年月日单个
+        $('.J-datepickerTime-single').datePicker({
+            format: 'YYYY-MM-DD HH:mm'
+        });
+
+        //十分年月日范围
+        $('.J-datepickerTime-range').datePicker({
+            format: 'YYYY-MM-DD HH:mm',
+            isRange: true
+        });
+
+        //十分秒年月日范围，包含最大最小值
+        $('.J-datepicker-range').datePicker({
+            hasShortcut: true,
+            min: '2018-01-01 06:00:00',
+            max: '2019-04-29 20:59:59',
+            isRange: true,
+            shortcutOptions: [{
+                name: '昨天',
+                day: '-1,-1',
+                time: '00:00:00,23:59:59'
+            },{
+                name: '最近一周',
+                day: '-7,0',
+                time:'00:00:00,'
+            }, {
+                name: '最近一个月',
+                day: '-30,0',
+                time: '00:00:00,'
+            }, {
+                name: '最近三个月',
+                day: '-90, 0',
+                time: '00:00:00,'
+            }]
+        });
+        //十分秒年月日范围，限制只能选择同一月，比如2018-10-01到2018-10-30
+        $('.J-datepicker-range-betweenMonth').datePicker({
+            isRange: true,
+            between:'month',
+            hasShortcut: true,
+            shortcutOptions: DATAPICKERAPI.rangeMonthShortcutOption1()
+        });
+
+        //十分秒年月日范围，限制开始结束相隔天数小于30天
+        $('.J-datepicker-range-between30').datePicker({
+            isRange: true,
+            between: 30
+        });
+
+        //年月单个
+        $('.J-yearMonthPicker-single').datePicker({
+            format: 'YYYY-MM',
+            min: '2018-01',
+            max: '2019-04'
+        });
+
+        //选择年
+        $('.J-yearPicker-single').datePicker({
+            format: 'YYYY',
+            min: '2018',
+            max: '2020'
+        });
+
+    });
+</script>
+	</body>
+
+</html>

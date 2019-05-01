@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>设备监控</title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/EquipmentMonitoring.css" />
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+	</head>
+
+	<body>
+		<div class="clf top_column">
+			<div class="fl">
+				<h6>管理系统</h6></div>
+			<div class="fr">
+				<a href="javascript:"><span>admin</span>欢迎您！</a>
+				<a href="javascript:">刷新页面</a>
+				<a href="javascript:">安全退出</a>
+			</div>
+		</div>
+		<div class="left_column clf">
+			<ul id="ul">
+				<li>
+					<div class="title">基础资料</div>
+					<div class="menu">
+						<a href="admin_BasicData_DepartmentManagement.html">部门管理</a>
+						<a href="admin_BasicData_OperationLog.html">操作日志</a>
+						<a href="admin_BasicData_DataDictionaryl.html">数据字典</a>
+						<a href="admin_BasicData_UserManagement.html">系统配置</a>
+						<a href="admin_BasicData_UserManagement.html">用户管理</a>
+						<a href="admin_BasicData_RolemManagement.html">角色管理</a>
+						<a href="admin_BasicData_ResourceManagement.html">资源管理</a>
+						<a href="admin_BasicData_ProjectManagement.html">项目管理</a>
+					</div>
+				</li>
+				<li>
+					<div class="title">业务中心</div>
+					<div class="menu">
+						<a href="BusinessCenter_YardArea.html">车场区域</a>
+						<a href="BusinessCenter_VehicleLicense.html">车辆授权</a>
+						<a href="BusinessCenter_BuildingManagement.html">房屋管理</a>
+						<a href="BusinessCenter_EquipmentManagement.html">设备管理</a>
+						<a href="BusinessCenter_EquipmentManagement_1.html">设备管理展开</a>
+						<a href="BusinessCenter_MonthCard.html">月卡续费</a>
+					</div>
+				</li>
+				<li class='current'>
+					<div class="title">监控中心</div>
+					<div class="menu">
+						<a href="EquipmentMonitoring.html" class="active">设备监控</a>
+					</div>
+				</li>
+				<li>
+					<div class="title">报表中心</div>
+					<div class="menu">
+						<a href="Report.html">固定车辆信息统计表</a>
+						<a href="Report_1.html">固定车辆信息统计表-1</a>
+					</div>
+				</li>
+			</ul>
+			<a href="javascript:" class="toggleBtn"></a>
+		</div>
+
+		<!--内容部分-->
+		<div class="box clf">
+			<div class="wrap clf">
+    <div class="wrap-left fl">
+      <div class="ltop">
+      	<div class="openc ltopopen">
+      		<div class="opend">开闸</div>
+      		<div class="closed">关闸</div>
+      		<div class="watch_video">观看视频</div>
+      	</div>
+        <p class="p1"><span class="sptop">...</span></p>
+        <section class="secl fl"><img src="images/secl.png"></section>
+        <section class="secr fr">
+          <b>东门入口</b>
+          <span style="color:#52d669;">道闸已开启</span>
+        </section>
+      </div>
+      <div class="lbot">
+      	<div class="openc lbotopen">
+      		<div class="opend">开闸</div>
+      		<div class="closed">关闸</div>
+      		<div class="watch_video">观看视频</div>
+      	</div>
+        <p class="p1"><span class="spbot">...</span></p>
+        <section class="secl fl" style="padding-top:6%;"><img src="images/secr.png"></section>
+        <section class="secr fr">
+          <b>东门出口</b>
+          <span>道闸已关闭</span>
+        </section>
+      </div>
+    </div>
+    <div class="wrap-right fr">
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap1 clf">
+
+    <div class="wrap1-left fl">
+      <div class="top">
+        <a class="but1 fl">场内车辆查询</a>
+        <a class="but2 fl">临占固</a>
+        <a class="but2 fl">扫描枪配置</a>
+        <a class="but2 fl">换班</a>
+        <a class="but2 fl">其他</a>
+        <p class="ptext">当日收入总额：<span class="redtext"><strong>43555</strong></span>元</p>
+      </div>
+      <div class="bot">
+        <table>
+          <tbody>
+          <tr>
+            <th><input class="ckb" type="checkbox"></th>
+            <th>代码</th>
+            <th>名称</th>
+            <th>类型</th>
+            <th>创建日期</th>
+            <th>状态</th>
+            <th>最后创建者</th>
+            <th class="cz">操作</th>
+          </tr>
+          <tr>
+            <td><input class="rad" type="radio" id="deo1" name="radio" value="1"><label for="deo1"></label></td>
+            <td>L0678</td>
+            <td>币种</td>
+            <td>离散条件</td>
+            <td><p>2015-09-26</p>
+              <p>08：50：08</p></td>
+            <td><a href="/">已配置，已生效</a></td>
+            <td>灵惜</td>
+            <td><i class="iconfont icon-yanjing"></i><i class="iconfont icon-edit"></i><i
+                class="iconfont icon-shanchu"></i></td>
+          </tr>
+          <tr>
+            <td><input class="rad" type="radio" id="deo2"><label for="deo2" name="radio" value="1"></label></td>
+            <td>L0678</td>
+            <td>币种</td>
+            <td>离散条件</td>
+            <td><p>2015-09-26</p>
+              <p>08：50：08</p></td>
+            <td><a href="/">已配置，已生效</a></td>
+            <td>灵惜</td>
+            <td><i class="iconfont icon-yanjing"></i><i class="iconfont icon-edit"></i><i
+                class="iconfont icon-shanchu"></i></td>
+          </tr>
+          <tr>
+            <td><input class="rad" type="radio" id="deo3"><label for="deo3" name="radio" value="1"></label></td>
+            <td>L0678</td>
+            <td>币种</td>
+            <td>离散条件</td>
+            <td><p>2015-09-26</p>
+              <p>08：50：08</p></td>
+            <td><a class="red-text" href="/">未配置</a></td>
+            <td>灵惜</td>
+            <td><i class="iconfont icon-yanjing"></i><i class="iconfont icon-edit"></i><i
+                class="iconfont icon-shanchu"></i></td>
+          </tr>
+          <tr>
+            <td><input class="rad" type="radio" id="deo4"><label for="deo4" name="radio" value="1"></label></td>
+            <td>L0678</td>
+            <td>币种</td>
+            <td>离散条件</td>
+            <td><p>2015-09-26</p>
+              <p>08：50：08</p></td>
+            <td><a href="/">已配置，已生效</a></td>
+            <td>灵惜</td>
+            <td><i class="iconfont icon-yanjing"></i><i class="iconfont icon-edit"></i><i
+                class="iconfont icon-shanchu"></i></td>
+          </tr>
+          <tr>
+            <td><input class="rad" type="radio" id="deo5"><label for="deo5" name="radio" value="1"></label></td>
+            <td>L0678</td>
+            <td>币种</td>
+            <td>离散条件</td>
+            <td><p>2015-09-26</p>
+              <p>08：50：08</p></td>
+            <td><a href="/">已配置，已生效</a></td>
+            <td>灵惜</td>
+            <td><i class="iconfont icon-yanjing"></i><i class="iconfont icon-edit"></i><i
+                class="iconfont icon-shanchu"></i></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="wrap1-right fr">
+      <div class="section-one clf">
+        <div class="pbb"><strong>粤B·123456</strong></div>
+        <div class="ps">2015-09-26 08:50:08 入场</div>
+        <div class="pst">已停<span>1</span>天<span>12</span>小时<span>8</span>分<span>41</span>秒</div>
+      </div>
+      <div class="clf" style="margin-bottom:3.125rem;">
+        <div class="pgt">应收金额：<span><strong>60</strong></span>元</div>
+        <div class="pl fl">优惠金额：<span>20</span>元</div>
+        <div class="pr fr">实收金额：<span>80</span>元</div>
+      </div>
+
+      <div class="py clf">
+        <div class="pay xj">
+          <input type="radio" name="radio1" value="1" id="way">
+          <label for="way"></label>
+          <span>现金</span>
+        </div>
+        <div class="pay zfb">
+          <input type="radio" name="radio1" value="1" id="zfb">
+          <label for="zfb"></label>
+          <span>支付宝</span>
+        </div>
+        <div class="wx wx">
+          <input type="radio" name="radio1" value="1" id="wx">
+          <label for="wx"></label>
+          <span>微信</span>
+        </div>
+      </div>
+
+      <div class="clf">
+        <a class="but" href="javascript:">确认开闸</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="delete_prompt">
+	<div class="depwd">
+		<div class="text">你是否确认删除选中的记录</div>
+		<div class="button clf">
+			<a class="qr fr">确定</a>
+			<a class="qx fr">取消</a>
+		</div>
+	</div>
+</div>
+	</body>
+		<script src="js/jquery-1.8.0.min.js"></script>
+		<script src="js/js.js"></script>
+		<script src="js/range.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script>
+			$('.sptop').click(function(){
+				$('.ltopopen').show();
+			});
+			$('.spbot').click(function(){
+				$('.lbotopen').show();
+			});
+			$('.openc').click(function(){
+				$(this).hide();
+			});
+		</script>
+</html>

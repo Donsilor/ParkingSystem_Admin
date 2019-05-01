@@ -1,0 +1,14 @@
+.box{height: 100vh;}
+.box .content{height:98%;}
+.result .tab .report-table tr th:first-child{width:3%;}
+.box .boxtop-nav ul li{width: calc(100%/8);}
+.box .boxtop-nav ul li:nth-child(3){width: calc(100%/6);}
+
+.box .bottom{width:100%;height:65%;background:#fff;padding:20px;margin-top:1%;border-top-right-radius:5px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+.box .bottom .remind{width:100%;height:auto;background:#fcf8e2;border:1px solid #fbeccb;padding:15px 0 15px 2%;font-size:14px;color:#f68300;}
+.box .bottom .remind:before{content:'';display:inline-block;width:14px;height:14px;background:url(../images/icon_5.png)no-repeat center/contain;margin-right:5px;vertical-align:middle;}
+
+#flowDistribution{width: 95%;height: 480px;margin: auto;box-shadow: -5px 5px 10px #eee;}
+
+
+

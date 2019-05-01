@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>固定车辆信息统计表_1</title>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/Report_1.css" />
+		<link rel="stylesheet" href="css/datepicker.css" />
+		<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+	</head>
+
+	<body>
+
+		<div class="clf top_column">
+			<div class="fl">
+				<h6>管理系统</h6></div>
+			<div class="fr">
+				<a href="javascript:"><span>admin</span>欢迎您！</a>
+				<a href="javascript:">刷新页面</a>
+				<a href="javascript:">安全退出</a>
+			</div>
+		</div>
+		<div class="left_column clf">
+			<ul id="ul">
+				<li>
+					<div class="title">基础资料</div>
+					<div class="menu">
+						<a href="admin_BasicData_DepartmentManagement.html">部门管理</a>
+						<a href="admin_BasicData_OperationLog.html">操作日志</a>
+						<a href="admin_BasicData_DataDictionaryl.html">数据字典</a>
+						<a href="admin_BasicData_UserManagement.html">系统配置</a>
+						<a href="admin_BasicData_UserManagement.html">用户管理</a>
+						<a href="admin_BasicData_RolemManagement.html">角色管理</a>
+						<a href="admin_BasicData_ResourceManagement.html">资源管理</a>
+						<a href="admin_BasicData_ProjectManagement.html">项目管理</a>
+					</div>
+				</li>
+				<li>
+					<div class="title">业务中心</div>
+					<div class="menu">
+						<a href="BusinessCenter_YardArea.html">车场区域</a>
+						<a href="BusinessCenter_VehicleLicense.html">车辆授权</a>
+						<a href="BusinessCenter_BuildingManagement.html">房屋管理</a>
+						<a href="BusinessCenter_EquipmentManagement.html">设备管理</a>
+						<a href="BusinessCenter_EquipmentManagement_1.html">设备管理展开</a>
+						<a href="BusinessCenter_MonthCard.html">月卡续费</a>
+					</div>
+				</li>
+				<li>
+					<div class="title">监控中心</div>
+					<div class="menu">
+						<a href="EquipmentMonitoring.html">设备监控</a>
+					</div>
+				</li>
+				<li class='current'>
+					<div class="title">报表中心</div>
+					<div class="menu">
+						<a href="Report.html">固定车辆信息统计表</a>
+						<a href="Report_1.html" class="active">固定车辆信息统计表-1</a>
+					</div>
+				</li>
+			</ul>
+			<a href="javascript:" class="toggleBtn"></a>
+		</div>
+
+		<!--内容部分-->
+		<div class="box clf">
+
+			<div class="content clf">
+				<div class="boxtop-nav">
+					<ul class="clf">
+						<li>
+							<a href="admin_home.html">首页</a>
+						</li>
+						<li>
+							<a href="Report.htmll">固定车辆信息统计表</a>
+						</li>
+						<li class="nav-active">
+							<a href="Report_1.html">固定车辆信息统计表-1</a>
+						</li>
+					</ul>
+				</div>
+				<div class="search ">
+					<div class="add">
+						<button class="registration-car blu-button">登记车辆</button>
+						<button class="upload-aut blu-button">导入授权</button>
+						<button class="doenloadtxt blu-button">导出TXT</button>
+					</div>
+					<div class="clf top toggleDiv">
+						<div class="cominput fl">
+							<span class="conditions-text">电话号码：</span>
+							<input type="text" placeholder="请输入">
+						</div>
+						<div class="cominput fl">
+							<span class="conditions-text">住户姓名：</span>
+							<select>
+								<option>请选择</option>
+								<option>请选择</option>
+								<option>请选择</option>
+							</select>
+						</div>
+						<div class="cominput fl">
+							<span class="conditions-text">房号：</span>
+							<select>
+								<option>请选择</option>
+								<option>请选择</option>
+								<option>请选择</option>
+							</select>
+						</div>
+						<div class="cominput fl">
+							<span class="conditions-text">搜索名称：</span>
+							<input type="text" placeholder="请输入">
+						</div>
+						<div class="fl create">
+							<span>创建时间：</span>
+							<div>
+								<div class="c-datepicker-date-editor  J-datepicker-range-day mt10">
+									<input placeholder="开始时间" name="" class="c-datepicker-data-input only-date" value="">
+									<span class="c-datepicker-range-separator">至</span>
+									<input placeholder="结束时间" name="" class="c-datepicker-data-input only-date" value="">
+								</div>
+								<a href="javascript:"></a>
+							</div>
+						</div>
+					</div>
+					<div class="clf bottom">
+						<div class="fl">
+							<button class="plechoose fl">请选择 <img src="images/icon_9.png" alt=""></button>
+							<button class="batchdel fl">批量删除</button>
+							<button class="greenbut fl">配置车场收费标准</button>
+							<div>共搜索到 <span>922</span> 条数据</div>
+						</div>
+						<div class="fr">
+							<button class="search-button blu-button">搜索</button>
+							<button class="clear-button bluborder-button">清除</button>
+							<button class="ss transf-button">
+          						<i><img src="images/icon_t_arrow2.png" alt=""></i>
+            					<span>收起搜索</span>
+         					</button>
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+   					<div id="flowDistribution"></div>
+    			</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.8.0.min.js"></script>
+		<script src="js/js.js"></script>
+		<script type="text/javascript" src="js/echarts.min.js" ></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/moment.min.js"></script>
+		<script src="js/datepicker.all.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.add').click(function() {
+					$(".main").show();
+					$('.depwd').draggable({
+						handle: "div.top-nav"
+					}, {
+						containment: "parent"
+					});
+				});
+				$(".close").click(function() {
+					$(".main").hide();
+				});
+				$(".qx").click(function() {
+					$(".main").hide();
+				});
+			});
+  var flowDistribution = echarts.init(document.getElementById('flowDistribution'));
+  var flowDistributionOption = {
+    title: {
+      text: '流量分布',
+      left: '0px',
+      textStyle: {
+        fontSize: 20,
+        fontWeight: 'normal'
+      }
+    },
+    tooltip: {
+      trigger: 'axis'
+    },
+    legend: {
+      data: ['临停', '固定'],
+      right: 0
+    },
+    grid: {
+      left: '0',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      boundaryGap: false,
+      data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [
+      {
+        name: '临停',
+        type: 'line',
+        stack: '总量',
+        data: [120, 132, 101, 134, 90, 230, 210, 120, 132, 101, 134, 90, 230, 210]
+      },
+      {
+        name: '固定',
+        type: 'line',
+        stack: '总量',
+        data: [220, 182, 191, 234, 290, 330, 310, 220, 182, 191, 234, 290, 330, 310]
+      }
+    ],
+    color: ['#1c7dfa', '#53d769']
+  };
+  flowDistribution.setOption(flowDistributionOption);			
+		</script>
+	</body>
+
+</html>

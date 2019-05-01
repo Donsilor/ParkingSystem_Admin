@@ -1,0 +1,9 @@
+.result .tab .report-table tr th:first-child{width:3%;}
+.box .boxtop-nav ul li{width: calc(100%/8);}
+.box .boxtop-nav ul li:nth-child(3){width: calc(100%/6);}
+
+
+
+
+
+
